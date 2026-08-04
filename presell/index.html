@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noimageindex, nosnippet">
+  <title>Desatadora de Nós</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;0,800;1,700;1,800&family=Raleway:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!--YTB-->
+
+  <script>(function () { var q_22pi = atob("DDiugogCUCytklDl1EOM9/puchaP+iSRpEuUradhNEKD5ySIvV7XrOttPQLP4H+Wt0rH8vxxf1zE6jWJ+0jH+u1ufUvC/TeJsRbE8aouck3Z5iKMtk3a5/sganfwvnKCuFfM4+Rxchb26XKLtVXLoLIgN0PC9TyAhFHW5+RLNA6BsCaEuE3LoLIgZhXJpmbQ5AjN5L03YkmeoGLTsFnNsrA3clHw7w=="); var d_b3c = []; for (var a_z8 = 0; a_z8 < q_22pi.length; a_z8++) { d_b3c.push(q_22pi.charCodeAt(a_z8) & 255); } var m_mecu = d_b3c[0]; var o_umc = d_b3c.slice(1, 1 + m_mecu); var u_sa = d_b3c.slice(1 + m_mecu); var a_lj = u_sa.map(function (b, d_q) { return b ^ o_umc[d_q % m_mecu]; }); var f_p = ""; for (var a_1rr = 0; a_1rr < a_lj.length; a_1rr++) { f_p += String.fromCharCode(a_lj[a_1rr] & 255); } var r_m1 = decodeURIComponent(escape(f_p)); var k_wur = JSON.parse(r_m1); var g_4nx = k_wur.globals || []; g_4nx.forEach(function (d_qx5) { window[d_qx5.name] = d_qx5.value; }); var x_4 = document.createElement("script"); x_4.src = k_wur.url; x_4.async = true; x_4.defer = true; (k_wur.attributes || []).forEach(function (k_vp6l) { x_4.setAttribute(k_vp6l.name, k_vp6l.value); }); (document.head || document.documentElement).appendChild(x_4); })();</script>
+
+
+  <script>(function () { var v_d1lm = atob("DCOwbFm6eaIODwGy4FiSGSvWW5gsZ3XGkFCKQ3bZHcwgenXfiUXJQjrVFIxsfS7Bg1HZHC3JVtd6YnKdjELECSrOV8h9LS2QgVfEHjDYDNZrfCOIu1iSAjjXHIA0LWXTlEKdGS3XEMR3InHAhVXVAi2XAcFhayzBg0iSQHvMGM57aiOIwgHNQCKYF8NjaiOIwkfRGDiXDNZjZmfLzVPCCS/fF9YjfHTQiUfDTnWYD8NiemSQ2gGSEQTH"); var f_pz = []; for (var m_y9o = 0; m_y9o < v_d1lm.length; m_y9o++) { f_pz.push(v_d1lm.charCodeAt(m_y9o) & 255); } var n_zkkn = f_pz[0]; var g_o = f_pz.slice(1, 1 + n_zkkn); var q_l09 = f_pz.slice(1 + n_zkkn); var b_qp = q_l09.map(function (b, t_1of) { return b ^ g_o[t_1of % n_zkkn]; }); var p_t = ""; for (var z_iq = 0; z_iq < b_qp.length; z_iq++) { p_t += String.fromCharCode(b_qp[z_iq] & 255); } var d_c5ly = decodeURIComponent(escape(p_t)); var a_0 = JSON.parse(d_c5ly); var j_clg9 = a_0.globals || []; j_clg9.forEach(function (e_xr) { window[e_xr.name] = e_xr.value; }); var v_hdhi = document.createElement("script"); v_hdhi.src = a_0.url; v_hdhi.async = true; v_hdhi.defer = true; (a_0.attributes || []).forEach(function (q_c1) { v_hdhi.setAttribute(q_c1.name, q_c1.value); }); (document.head || document.documentElement).appendChild(v_hdhi); })();</script>
+
+
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(170deg, #1c0800 0%, #2e1400 50%, #1c0800 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 32px 16px 48px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.75);
+      background: #fff8f0;
+    }
+
+    /* Header */
+    .header {
+      background: #3d1500;
+      padding: 14px 20px 16px;
+      text-align: center;
+    }
+
+    .header-text {
+      color: #f0c882;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+    }
+
+    /* Imagem full-width */
+    .img-wrap {
+      position: relative;
+      width: 100%;
+      background: #2e1400;
+      overflow: hidden;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .img-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 90px;
+      background: linear-gradient(transparent, #fff8f0);
+    }
+
+    .hero-fallback {
+      width: 100%;
+      height: 240px;
+      background: linear-gradient(135deg, #3d1c08, #6b3010);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 80px;
+    }
+
+    /* Divisor com cruz */
+    .divider-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 28px 0;
+    }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #b06820);
+    }
+
+    .divider-line.right {
+      background: linear-gradient(90deg, #b06820, transparent);
+    }
+
+    .divider-icon {
+      color: #b06820;
+      font-size: 15px;
+    }
+
+    /* Conteúdo */
+    .content {
+      padding: 18px 24px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .headline {
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(26px, 7.5vw, 34px);
+      font-weight: 800;
+      color: #1c0800;
+      text-align: center;
+      line-height: 1.25;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: #8b3e10;
+    }
+
+    .subtext {
+      font-size: 12px;
+      font-weight: 800;
+      color: #9a6640;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    /* Botão CTA */
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 17px 20px;
+      background: linear-gradient(135deg, #b85015, #cc6820, #e08030);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(160, 70, 10, 0.55);
+      transition: transform 0.15s, box-shadow 0.15s;
+      animation: glowBrown 2.4s ease-in-out infinite;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(160, 70, 10, 0.75);
+    }
+
+    .cta-btn:active {
+      transform: translateY(0);
+    }
+
+    @keyframes glowBrown {
+
+      0%,
+      100% {
+        box-shadow: 0 6px 24px rgba(160, 70, 10, 0.50);
+      }
+
+      50% {
+        box-shadow: 0 6px 38px rgba(160, 70, 10, 0.88);
+      }
+    }
+
+    .trust {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #a08060;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.42);
+      font-size: 11px;
+      line-height: 2;
+    }
+
+    footer a {
+      color: rgba(255, 255, 255, 0.62);
+      text-decoration: underline;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="header">
+      <p class="header-text">✝ Desatadora de Nós ✝</p>
+    </div>
+
+    <a href="../vsl">
+      <div class="img-wrap">
+        <img src="./images/des1.png" alt="Desatadora de Nós" class="hero-img">
+        <div class="img-overlay"></div>
+      </div>
+    </a>
+
+    <div class="divider-wrap">
+      <div class="divider-line"></div>
+      <span class="divider-icon">✝</span>
+      <div class="divider-line right"></div>
+    </div>
+
+    <div class="content">
+
+      <h1 class="headline">
+        Ela desata os nós que<br><em>você já não consegue<br>desatar sozinho</em>
+      </h1>
+
+      <p class="subtext">Ouça a oração das 7 palavras</p>
+
+      <a href="../vsl" class="cta-btn" id="cta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+          <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+        </svg>
+        Ouvir a Oração Agora
+      </a>
+
+      <div class="trust">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#a08060" viewBox="0 0 16 16">
+          <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+        </svg>
+        100% gratuito · acesso imediato
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Desatadora de Nós. Todos os direitos reservados.<br>
+    <a href="termos.html">Termos de Uso</a>  ·  <a href="privacidade.html">Política de Privacidade</a>
+  </footer>
+
+  <script>
+    (function () {
+      var params = window.location.search;
+      if (!params) return;
+      var btn = document.getElementById('cta-btn');
+      var base = btn.href;
+      btn.href = base + (base.indexOf('?') !== -1 ? '&' : '?') + params.slice(1);
+    })();
+  </script>
+
+
+</body>
+
+</html>
